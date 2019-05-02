@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="donate"
+        android:summary="@string/summary_donate"
+        android:title="@string/title_donate">
+
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/title_ocd_settings">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_settings"
+            android:summary="@string/summary_display_settings"
+            android:title="@string/title_display_settings" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_progress_bar"
+            android:summary="@string/summary_display_progress_bar"
+            android:title="@string/title_display_progress_bar" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="auto_delete"
+            android:summary="@string/summary_auto_delete"
+            android:title="@string/title_auto_delete" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_perm"
+            android:summary="@string/summary_show_perm"
+            android:title="@string/title_show_perm" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/title_margins"
+            android:entries="@array/btn_margins"
+            android:entryValues="@array/btn_margins"
+            android:key="btn_margins"
+            android:summary="@string/summary_margins"
+            android:title="@string/title_margins" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_color_settings">
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="status_bar_color"
+            android:summary="@string/summary_status_bar_color"
+            android:title="@string/title_status_bar_color" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="progress_normal_color"
+            android:summary="@string/summary_progress_normal"
+            android:title="@string/title_progress_normal" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="progress_installing_color"
+            android:summary="@string/summary_progress_installing"
+            android:title="@string/title_progress_installing" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="progress_failure_color"
+            android:summary="@string/summary_progress_failure"
+            android:title="@string/title_progress_failure" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="progress_success_color"
+            android:summary="@string/summary_progress_success"
+            android:title="@string/title_progress_success" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:defaultValue="@color/colorPrimary"
+            android:key="perm_color"
+            android:summary="@string/summary_perm_color"
+            android:title="@string/title_perm_color" />
+    </PreferenceCategory>
+</PreferenceScreen>

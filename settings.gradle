@@ -1,0 +1,2 @@
+include ':app', ':ColorPickerPreference', 'module_donatedialog'
+project(':ColorPickerPreference').projectDir = new File('app/libs/ColorPickerPreference')
