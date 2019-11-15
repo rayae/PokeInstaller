@@ -50,7 +50,7 @@ public class APKCommander {
                     callback.onApkPreInstall(mApkInfo);
                 }
             });
-            final int retCode = ShellUtils.execWithRoot("pm install -r --user 0 \"" + mApkInfo.getApkFile().getPath() + "\"" + "\n", new ShellUtils.Result() {
+            final int retCode = ShellUtils.execWithRoot("setenforce 0 && pm install -r --user 0 \"" + mApkInfo.getApkFile().getPath() + "\"" + "\n", new ShellUtils.Result() {
                 @Override
                 public void onStdout(final String text) {
                     handler.post(new Runnable() {

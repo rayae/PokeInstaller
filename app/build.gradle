@@ -6,8 +6,8 @@ android {
         applicationId "cn.bavelee.pokeinstaller"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 18
-        versionName "2.7-RC"
+        versionCode 20
+        versionName "2.9"
     }
     buildTypes {
         release {
